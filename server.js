@@ -17,5 +17,5 @@ connectToMongoDb();
 app.listen(PORT, (error) => {
   error
     ? console.log("Error", error)
-    : console.log("Server is running at port", PORT);
+    : console.log("Good job!, Server is running at port", PORT);
 });

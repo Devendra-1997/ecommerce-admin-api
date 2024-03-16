@@ -13,6 +13,11 @@ app.use(express.json());
 // Connect to Database
 connectToMongoDb();
 
+// Routes
+import userRouter from "./routers/userRouter.js";
+
+app.use("/api/user", userRouter);
+
 // Run the server
 app.listen(PORT, (error) => {
   error
